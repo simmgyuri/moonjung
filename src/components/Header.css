@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin-bottom: 50px;
+  }
+  
+   .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #000000;
+    cursor: pointer;
+   }
+  
+  /* 로그인 */
+  a.login-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  
+  /* 선 효과 */
+  a.login-btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #B484FF; /* 선 색상, 테스트용으로 진하게 */
+    left: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  a.login-btn::after {
+    bottom: 0;
+  }
+  
+  a.login-btn:hover::after {
+    width: 100%;
+    left: 0;
+  }
